@@ -22,3 +22,7 @@ Route::get('/login', function () {
 Route::get('/login/forgotpassword', function () {
     return view('login/forgotpassword');
 });
+
+Route::get('/register', function () {
+    return view('register/index');
+});

@@ -1,16 +1,9 @@
 @extends('layout.master')
 
 @section('script')
-	
-	<script type="text/javascript">
-	    
-	    app.controller('MyController', function ($scope) {
-	       $scope.ButtonClick = function () {	            
-	        }
-	    });
-	</script>
-	
 
+	<script src="{{ URL::asset('assets/js/api/register/register.js') }}"></script>   
+	
 @endsection
 
 @section('content')
@@ -48,10 +41,8 @@
                                             <input class="form-control">
                                         </div>                                        
                                         
-                                        <input  type="button" ng-click="ButtonClick()" value="Test" />
-                                        
-                                        
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                        <input  type="button" class="btn btn-default" ng-click="register()" value="Register" />
+                                        <button type="button" class="btn btn-default">Reset</button>
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
